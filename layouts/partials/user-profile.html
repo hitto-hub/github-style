@@ -21,8 +21,10 @@
           <div class="position-relative d-inline-block col-2 col-md-12 mr-3 mr-md-0 flex-shrink-0" style="z-index:4;">
             {{ with $.Site.Params.avatar }}
             <a href="{{ $.Site.Params.avatar }}">
-              <img style="height:auto;" alt="Avatar" width="260" height="260" id="headerImg"
-                class="avatar avatar-user width-full border bg-white" src="{{ $.Site.Params.avatar_main }}" decoding="sync" alt="Avatar">
+              <img id="headerImg" class="avatar avatar-user width-full border bg-white" src="{{ $.Site.Params.avatar_main }}"
+                srcset="{{ $.Site.Params.avatar_mobile }} 600w, {{ $.Site.Params.avatar_main }} 1200w"
+                sizes="(max-width: 600px) 100vw, 260px" alt="Avatar" width="260" height="260" decoding="sync" fetchpriority="high"
+                style="height:auto;">
             </a>
             {{ else }}
             <a href="{{ " images/avatar.webp" | absURL }}">
