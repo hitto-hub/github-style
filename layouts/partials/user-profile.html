@@ -22,7 +22,7 @@
             {{ with $.Site.Params.avatar }}
             <a href="{{ $.Site.Params.avatar }}">
               <img style="height:auto;" alt="Avatar" width="260" height="260" id="headerImg"
-                class="avatar avatar-user width-full border bg-white" src="{{ $.Site.Params.avatar }}" loading="lazy" decoding="async" alt="Avatar">
+                class="avatar avatar-user width-full border bg-white" src="{{ $.Site.Params.avatar_main }}" loading="lazy" decoding="async" alt="Avatar">
             </a>
             {{ else }}
             <a href="{{ " images/avatar.webp" | absURL }}">
