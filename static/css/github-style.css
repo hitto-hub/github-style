@@ -202,3 +202,27 @@ button.Header-link {
 .pinned-item-desc img {
   max-width: 100%;
 }
+
+button.filter-item {
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+/* 年フィルターのボタン（選択されていないもの）を完全にフラットに */
+button.filter-item:not(.selected) {
+  /* デフォルトの背景色を消す */
+  background-color: transparent !important;
+  /* 枠線も消したいならこちらも */
+  border: none !important;
+  /* 念のためフォーカスリングも消す */
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+li button.filter-item {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  text-align: left;             /* ← 左寄せ */
+  box-sizing: border-box;
+}
