@@ -223,6 +223,24 @@ li button.filter-item {
   display: block;
   width: 100%;
   padding: 0.5rem 1rem;
-  text-align: left;             /* ← 左寄せ */
+  text-align: left;
   box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+}
+
+a:hover,
+a:focus {
+  text-decoration-style: solid;
+}
+
+a:focus-visible {
+  outline: 2px dashed var(--color-accent);
+  outline-offset: 3px;
 }
