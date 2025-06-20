@@ -27,6 +27,19 @@ body {
   color: var(--color-header-logo);
   white-space: nowrap;
 }
+button.Header-link {
+  /* 通常の線を消す */
+  border: none !important;
+  background: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  /* UAデフォルトの見た目をさらに消す */
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  /* フォーカス枠も消したいとき */
+  outline: none !important;
+  box-shadow: none !important;
+}
 
 .Header-item {
   margin-right: 16px;
