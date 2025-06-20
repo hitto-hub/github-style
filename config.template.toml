@@ -19,9 +19,9 @@ pygmentsUseClasses = true
   keywords = "blog, google analytics"
   rss = true
   lastmod = true
-  favicon = "/images/github-mark.png"
-  avatar = "/images/avatar.png"
-  headerIcon = "/images/github-mark-white.png"
+  favicon = "/images/github-mark.webp"
+  avatar = "/images/avatar.webp"
+  headerIcon = "/images/github-mark-white.webp"
   location = "China"
   userStatusEmoji = "😀"
   enableGitalk = true
@@ -46,7 +46,7 @@ pygmentsUseClasses = true
   [[params.links]]
     title = "Link2"
     href = "https://meik2333.com"
-    icon = "https://meik2333.com/images/avatar.png"
+    icon = "https://meik2333.com/images/avatar.webp"
 
 [frontmatter]
   lastmod = ["lastmod", ":fileModTime", ":default"]
