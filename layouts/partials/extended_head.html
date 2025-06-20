@@ -1,7 +1,7 @@
 <meta name="description"
   content="{{ if .IsHome }}{{ .Site.Params.tagline }}{{ else }}{{ .Summary | plainify }}{{ end }}" />
 {{ $host := .Site.Params.canonicalHost | default .Site.BaseURL }}
-<link rel="canonical" href="{{ printf " %s%s" $host .RelPermalink }}" />
+<link rel="canonical" href="{{ $host }}{{ .RelPermalink }}" />
 <meta name="keywords" content="{{ with .Params.keywords }}{{ delimit . ", " }}{{ else }}{{ .Site.Params.keywords }}{{ end }}" />
 <meta name="robots" content="noodp" />
 <!-- Twitter Card -->
