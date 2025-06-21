@@ -49,7 +49,7 @@ function switchYear(year) {
       }
     }
   }
-  posts.sort((a, b) => { return b - a });
+  posts.sort((a, b) => b.date - a.date);
   document.querySelector('#posts-activity').innerHTML = '';
   for (const time of ms) {
     const node = document.createElement('div');
